@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FF3F99AF-5535-46E7-A01D-D2E5A525C2E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WASDMode</RootNamespace>
-    <AssemblyName>WASDMode</AssemblyName>
+    <RootNamespace>HJKLMode</RootNamespace>
+    <AssemblyName>HJKLMode</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>wasd.ico</ApplicationIcon>
+    <ApplicationIcon>hjkl.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -77,7 +77,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="wasd.ico" />
+    <Content Include="hjkl.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
