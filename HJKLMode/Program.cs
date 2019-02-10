@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WASDMode
+namespace HJKLMode
 {
   static class Program
   {
@@ -16,7 +16,7 @@ namespace WASDMode
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new WASDMode());
+      Application.Run(new HJKLMode());
     }
   }
 }

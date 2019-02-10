@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WASDMode.Properties {
+namespace HJJKL.Properties {
     using System;
     
     

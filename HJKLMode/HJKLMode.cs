@@ -1,24 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using WASDMode.Properties;
 
-namespace WASDMode {
-  public class WASDMode : ApplicationContext {
+namespace HJKLMode
+{
+  public class HJKLMode : ApplicationContext {
     private NotifyIcon trayIcon;
+    private bool capturing;
 
-    public WASDMode() {
+    public HJKLMode() {
       trayIcon = new NotifyIcon() {
         Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath),
         ContextMenu = new ContextMenu(new MenuItem[] {
-          new MenuItem("Exit", this.Exit)
+          new MenuItem("Enable", Enable),
+          new MenuItem("Disable", Disable),
+          new MenuItem("Exit", Exit)
         }),
         Visible = true
       };
+    }
+
+    void Enable(object sender, EventArgs e) {
+      capturing = true;
+    }
+
+    void Disable(object sender, EventArgs e) {
+      capturing = false;
     }
 
     void Exit(object sender, EventArgs e) {
