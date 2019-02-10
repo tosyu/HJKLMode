@@ -180,11 +180,14 @@ namespace SnagFree.TrayApp.Core
     public const int VkEscape = 0x18;
     public const int VkControl = 0x11;
     public const int KfAltdown = 0x2000;
+    public const int vkLShift = 0xa0;
     public const int LlkhfAltdown = (KfAltdown >> 8);
     public const int H = 0x48;
     public const int J = 0x4a;
     public const int K = 0x4b;
     public const int L = 0x4c;
+    public const int NUM_4 = 0x34;
+    public const int NUM_6 = 0x36;
 
     public IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam)
     {
